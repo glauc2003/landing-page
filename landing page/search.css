@@ -28,7 +28,7 @@ form {
   width: 40rem;
   background: var(--color-brand);
   border-radius: var(--rad);
-  margin-top: 55vh;
+  margin-top: 45vh;
   left: 50%;
   transform: translate(-50%, -50%);
   shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -50,8 +50,8 @@ input[type=search] {
   padding: 0 1.6rem;
   border-radius: var(--rad);
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   transition: all var(--dur) var(--bez);
   transition-property: width, border-radius;
   z-index: 1;
@@ -106,7 +106,7 @@ label {
 }
 
 ::placeholder {
-  color: white;
+  color: #02b9b9;
   opacity: 1; /* Firefox */
 }
 

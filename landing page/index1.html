@@ -12,17 +12,38 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 
-<div class="topnav">
-  <img class="logo" src="MondonomoLogo2.svg">
+<div class="topnav" id="Topnav">
+  <img class="logo" src="10jezika.svg">
+  <a href="javascript:void(0);" class="icon" id="hamburger" onclick="myFunction()" >
+  <i class="fa fa-bars"></i>
+  </a>
   <a href="#ai">AI ASSISTANT</a>
   <a href="#about">ABOUT</a>
   <a href="#home">HOME</a>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("Topnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 <div class="bg1"></div>
 
@@ -31,13 +52,13 @@
     <h1 class="h1">Be proud of your<br>Mondonomo<h1>
     <form class="search" onsubmit="event.preventDefault();" role="search">
       <label for="search">Search for stuff</label>
-      <input id="search" type="search" placeholder="Search..." autofocus required />
+      <input id="search" type="search" placeholder="Explore a name..." autofocus required />
       <button type="submit">Go</button>
     </form>
 
 <h2 class="h2" >Type your name and explore</h2>
 
-  <div class="row">
+  <div data-aos="fade-up" data-aos-duration="1000" class="row">
     <div class="column">
       <div class="card">
         <img src="NameAroundTheGlobe.jpg" alt="Globe" style="width:100%">
@@ -69,6 +90,20 @@
     </div>
   </div>
 
+
+  <div>
+  <img class="aipage" src="ai.jpg">
+  </div>
+
+
+<div>
+<img  data-aos="zoom-in" class="konfucije" src="konfucije.png">
+<p data-aos="fade-right" class="citat">If a name is not proper, language is not in accordance with the truth of things.
+  If language be not in accordance with the truth of things, affairs cannot be carried on to success.
+  When affairs cannot be carried on to success, proprieties and music do not flourish.</p>
+
+<p data-aos="fade-down" class="citat" id="ime">孔夫子 (Confucius), The Analects</p>
+</div>
 
 </body>
 </html>
