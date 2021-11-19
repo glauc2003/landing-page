@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ai assistant</title>
+<link rel="stylesheet" href="ai.css">
+</head>
+<body>
+
+  <header class="header">
+      <nav class="navbar">
+          <img class="nav-logo" src="10jezika.svg" alt="Logo">
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#home" class="nav-link">home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#ai" class="nav-link">ai assistant</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+  </header>
+
+<div><img class="bg"src="PodlogaAIAssistant.jpg"></div>
+
+
+<form action="/action_page.php" method="post">
+  <h1>Nomen bot is still in <br> a private preview phase<h1>
+  <h2>Please log in to access <br> AI assistant</h2>
+  <div class="container">
+    <label for="uname"><b class="txt">Username:</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b class="txt">Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">LOGIN</button>
+      <a class="google" href="#">Log in with Google</a>
+  </form>
+
+  </div>
+
+  <section class="footer">
+    <img class="tag" src="MondonomoTagline.svg">
+    <div class="f1">
+    <h5>contact</h5>
+    <li class="fli">mondonomo, inc.</li>
+    <li>2005 limestone rd ste 200-c</li>
+    <li>wilmington, de 19808</li>
+    <li>u.s.a</li>
+    </div>
+    <div class="f2">
+      <h5>legal</h5>
+      <li class="fli">privacy and cookies</li>
+      <li>statement</li>
+      <li>terms and conditions</li>
+      <li>sitemap</li>
+    </div>
+    <div class="f3">
+    <h5>global names</h5>
+    <li class="fli">names and languages</li>
+    <li>names and scripts</li>
+    <li>names and politics</li>
+    <li>names and genders</li>
+    <li>names and necessity</li>
+    </div>
+    <div class="f4">
+    <h5>onomastics</h5>
+    <li class="fli">toponomastics</li>
+    <li>anthroponastics</li>
+    <li>literary onomastics</li>
+    <li>socio-onomastics</li>
+    <li>other names</li>
+    </div>
+    <p class="rights">© 2021 Mondonomo. All rights reserved.</p>
+  </section>
+
+  <script>
+
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  const navLink = document.querySelectorAll(".nav-link");
+
+  hamburger.addEventListener("click", mobileMenu);
+  navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+  function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  }
+
+  function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+  }
+  </script>
+
+
+</body>
+</html>
